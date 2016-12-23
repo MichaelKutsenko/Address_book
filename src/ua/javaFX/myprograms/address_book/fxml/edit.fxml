@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="104.0" maxWidth="361.0" minHeight="104.0" minWidth="361.0" prefHeight="104.0" prefWidth="361.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.javaFX.myprograms.address_book.controllers.EditController">
+   <children>
+      <HBox>
+         <children>
+            <Label fx:id="lblFIO" contentDisplay="CENTER" prefWidth="65.0" text="%key.full_name" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtFIO">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Button fx:id="btnSave" defaultButton="true" mnemonicParsing="false" onAction="#actionSave" prefWidth="74.0" text="%key.save" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+      <HBox>
+         <children>
+            <Label fx:id="lblPhone" prefWidth="65.0" text="%key.phone">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtPhone">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Button fx:id="btnCancel" cancelButton="true" mnemonicParsing="false" onAction="#actionClose" prefWidth="74.0" text="%key.esc" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>
