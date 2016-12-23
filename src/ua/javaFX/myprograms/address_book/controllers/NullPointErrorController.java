@@ -27,6 +27,7 @@ public class NullPointErrorController implements Initializable {
         this.rb = resources;
     }
 
+
     public void actionRetry(ActionEvent actionEvent) {
         Node source = (Node) actionEvent.getSource();
         Stage stage = (Stage) source.getScene().getWindow();
