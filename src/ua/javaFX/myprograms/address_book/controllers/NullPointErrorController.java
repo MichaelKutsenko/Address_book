@@ -28,6 +28,7 @@ public class NullPointErrorController implements Initializable {
     }
 
 
+
     public void actionRetry(ActionEvent actionEvent) {
         Node source = (Node) actionEvent.getSource();
         Stage stage = (Stage) source.getScene().getWindow();
